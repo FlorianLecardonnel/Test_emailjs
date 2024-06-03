@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+</head>
+<body>
+    <form id="contact-form">
+        <!-- Pour simplifier le tutoriel, la valeur est statique. -->
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Nom</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Envoyer">
+    </form>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <!-- Inclure le script JavaScript dans une balise script -->
+    <script src="emailjs.js"></script>
+</body>
+</html>
